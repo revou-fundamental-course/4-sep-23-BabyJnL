@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aplikasi Kalkulator Persegi</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Katik</h1>
+            <h4>Kalkulator Tematik</h4>
+        </div>
+    </header>
+
+    <section>
+        <div class="card">
+            <div class="luas-card">
+                <div class="title">
+                    <h1>Luas Persegi</h1>
+                </div>
+
+                <div class="img-container">
+                    <img src="assets/img/persegi.jpeg" alt="" width="150px">
+                </div>
+
+                <div class="text-container">
+                    <div class="left-side">
+                        <h3>Rumus Luas:</h3>
+                        <h4 style="text-align: center;">L = S x S</h4>
+                    </div>
+                </div>
+
+                <h1 style="text-align: center; margin-top: 10px">Hitung Luas Persegi:</h1>
+
+                <div class="input-control">
+                    <input class="input-sisi" id="luas-input" type="text" placeholder="Input Sisi...">
+                    <button onclick="hitLuas()">Hitung</button>
+                </div>
+
+                <p id="luas-explanation"></p>
+                <p id="luas-final-result"></p>
+
+                <div class="reset-btn-container">
+                    <button onclick="resetLuas()">Reset</button>
+                </div>
+
+            </div>
+
+            <div class="keliling-card">
+                <div class="title">
+                    <h1>Keliling Persegi</h1>
+                </div>
+
+                <div class="img-container">
+                    <img src="assets/img/persegi.jpeg" alt="" width="150px">
+                </div>
+
+                <div class="text-container">
+                    <div class="left-side">
+                        <h3>Rumus Keliling:</h3>
+                        <h4 style="text-align: center;">K = 4 x S</h4>
+                    </div>
+                </div>
+
+                <h1 style="text-align: center; margin-top: 10px">Hitung Keliling Persegi:</h1>
+
+                <div class="input-control">
+                    <input class="input-sisi" id="keliling-input" type="text" placeholder="Input Sisi...">
+                    <button onclick="hitKeliling()">Hitung</button>
+                </div>
+
+                <p id="keliling-explanation"></p>
+                <p id="keliling-final-result"></p>
+
+                <div class="reset-btn-container">
+                    <button onclick="resetKeliling()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
